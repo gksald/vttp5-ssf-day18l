@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Display Date Time</h1>
+    <hr>
+    <p>
+        <span th:utext="${date}"></span>
+    </p>
+    <p>
+        <span th:utext="${#dates.format(date, 'dd MMM yyyy')}"></span>
+    </p>
+    <p>
+        <span th:utext="${#dates.format(date, 'hh:mm:ss a')}"></span>
+    </p>
+    <p>
+        <span th:utext="${#dates.format(date, 'dd MMM yyyy HH:MM:ss D')}"></span>
+    </p>
+</body>
+</html>
